@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend{
+            text-decoration:black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:black;
+        }
+        input{
+            margin: 0 auto;
+            padding: 5px;
+            margin-left: 5px;
+            margin-bottom: 15px;
+        }
+        #container{
+            padding: 10px;
+            background:white;
+            margin: 30px auto;
+            overflow: hidden;
+            width: 900px;}
+            body{background-color: thistle;}
+            fieldset{margin-bottom: 15px;}
+            #dreep{
+                display:table-column-group;
+                list-style-type: none;
+            }
+            h1{
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: blue;
+            }
+    </style>
+</head>
+<body>
+    <h1>FORM</h1>
+    <div id="container">
+    <form action="" method="POST">
+        <fieldset>
+           <legend>PERSONAL DETAILS</legend>
+            first name:
+            <input type="text" name="first name" value="Akande" required><br><br>
+            last name:
+            <input type="text" name="last name" value="Olalekan" required><br><br>
+            Middle:
+            <input type="text" name="Middle" maxlength="2" value="TO" required><br><br>
+            D.O.B:
+            <input type="date" name="D.O.B" min="1995-01-01" max="2005-12-31" value="1999-11-08" required><br><br>
+            Email:
+            <input type="email" name="email" value="akandeolalekantoheeb9@gmail.com" style="width: 50%;" required><br><br>
+            Age:
+            <input type="number" name="age" min="15" max="25" value="21" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>CONTACT DETAILS</legend>
+            Phone:
+            <input type="tel" name="phone" maxlength="13" value="2349015303637" required><br><br>
+            Social Media:
+            <textarea rows="3" cols="2"></textarea>
+        </fieldset> 
+        <fieldset>
+            <legend>ADDRESS</legend>
+            street:
+            <input type="text" name="street" value="No 131 ifelere street"><br><br>
+            city:
+            <input type="text" name="city" value="Ibadan" required><br><br>
+            state:
+            <select style="color: black;" name="State required">
+                <option value="OYO" selected>OYO</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Ogun">Ogun</option>
+                <option value="Ondo">Ondo</option>
+                <option value="Osun">Osun</option>
+            </select><br><br>
+        </fieldset>
+        <button type="submit" style=" padding: 8px;text-align: center;">Submit Application</button>
+        <input type="reset">
+
+    </form>
+    </div>
+</body>
+</html>
